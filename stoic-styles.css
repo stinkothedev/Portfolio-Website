@@ -208,6 +208,21 @@ a {
     display: block;
 }
 
+.stoic-video {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Optional: Sets a maximum size for desktop screens */
+  aspect-ratio: 16 / 9; /* Maintains perfect video proportions */
+}
+
+.stoic-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* Tablet View (Max-width: 992px) */
 @media (max-width: 992px) {
     .stoic-nav {
