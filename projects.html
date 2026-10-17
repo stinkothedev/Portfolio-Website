@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my web development and design portfolio. Check out my latest work and projects.">
+
+    <!-- Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- 1. The Local Bootstrap Style Link -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <!-- Your Custom Stylesheet -->
+    <link rel="stylesheet" href="projects-styles.css">
+
+    <title>Projects</title>
+</head>
+
+
+<body class="body-four">
+
+    <!--- NAVBAR 1 - TOP LINKS -->
+    <nav class="projects-nav">
+        <div class="left">
+            <a href="/">
+                <i class="fa-solid fa-house"></i>
+                Jake Stanglewicz
+            </a>
+        </div>
+
+        <div class="right">
+
+            <a href="stoic.html" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Stoic</span>
+            </a>
+
+            <a href="gamejams.html" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-headset"></i>
+                <span>Game Jams</span>
+            </a>
+
+            <a href="projects.html" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-book"></i>
+                <span>Projects</span>
+            </a>
+
+            <!-- <a href="Experiences" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Experiences</span>
+            </a> -->
+
+            <a href="https://github.com/stinkothedev" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>stinkothedev</span>
+            </a>
+
+            <a href="https://github.com/JakeStangSNHU" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>JakeStangSNHU</span>
+            </a>
+
+
+            <a href="https://stinkothedev.itch.io/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-itch-io"></i>
+                <span>Itch.io</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jake-stanglewicz-2516b224b/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:jaketstang@outlook.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <div class="projects-title">
+        <h1> Education and Projects </h1>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center justify-content-center">
+            
+            <!-- Left Column: Short Paragraph -->
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            <h3 class="fw-bold mb-3">GRA 311 - Environment Design </h3>
+            <p class="text-muted">
+                Engine: Maya/Blender/Substance Painter 3D/ Unreal Engine 5
+            </p>
+            <p class="text-muted">
+                Course project revolved around developing a playable and navigable level from a potential finish game. For my level, I created an environment from 'Lodestar', a
+                game concept I created set entirely on an island. Featuring a lighthouse and several other decaying buildings, Lodestar is intended to give off lonely, mysterious, and uneasy moods.
+                Several assets were created by me, using the engines listed above, while the remaining came from CC0 sites, such as Fab.
+            </div>
+            
+            <!-- Right Column: Auto-sliding & Controlled Carousel -->
+            <div class="col-lg-6 col-md-6">
+            <div id="gam311ScreenshotCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                
+                <!-- Carousel Indicators (The little dots at the bottom, optional) -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <!-- Carousel Images -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000"> <!-- Changes slides every 4 seconds -->
+                        <img src="Images/School/GRA 311/wor1.png" class="d-block w-100" alt="Game Screenshot 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GRA 311/wor2.png" class="d-block w-100" alt="Game Screenshot 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GRA 311/wor3.png" class="d-block w-100" alt="Game Screenshot 3">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GRA 311/wor4.png" class="d-block w-100" alt="Game Screenshot 4">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GRA 311/wor5.png" class="d-block w-100" alt="Game Screenshot 5">
+                    </div>
+                </div>
+
+                <!-- Manual Controls (Previous / Next Buttons) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#gam311ScreenshotCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gam311ScreenshotCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center justify-content-center">
+            
+            <!-- Left Column: Short Paragraph -->
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            <h3 class="fw-bold mb-3">GRA 201 - Intro to Digital Sculpting </h3>
+            <p class="text-muted">
+                Engine: Maya/ZBrush/Unreal Engine 5
+            </p>
+            <p class="text-muted">
+                Course project focused on developing a model from conception to game-ready asset. More specifically, I chose to model a simplified electrical box. I created a basic concept art,
+                used effective workflow to model both low-poly and high-poly variants, sculpted finer details, and painted appropriate diffuse, specular, and normal maps.
+            </div>
+            
+            <!-- Right Column: Auto-sliding & Controlled Carousel -->
+            <div class="col-lg-6 col-md-6">
+            <div id="gam201ScreenshotCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                
+                <!-- Carousel Indicators (The little dots at the bottom, optional) -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+
+                <!-- Carousel Images -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000"> <!-- Changes slides every 4 seconds -->
+                        <img src="Images/School/GRA 201/sc3.png" class="d-block w-100" alt="Game Screenshot 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GRA 201/sc4.png" class="d-block w-100" alt="Game Screenshot 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GRA 201/slides1.png" class="d-block w-100" alt="Game Screenshot 3">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GRA 201/slides2.png" class="d-block w-100" alt="Game Screenshot 4">
+                    </div>
+                </div>
+
+                <!-- Manual Controls (Previous / Next Buttons) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#gam201ScreenshotCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gam201ScreenshotCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center justify-content-center">
+            
+            <!-- Left Column: Short Paragraph -->
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            <h3 class="fw-bold mb-3">GAM 415 - Graphics Game Engine</h3>
+            <p class="text-muted">
+                Engine: Unreal Engine 5 Blueprints/C++
+            </p>
+            <p class="text-muted">
+                Course project focused on procedural assets, such as terrain generation, image mirroring, and projectiles. More specifically, C++ scripting was used to generate random colors 
+                and decals upon projectile impact, a randomized terrain generator, and a teleporter which renders in real time the exit location. Maintained using feature-branching workflow on Github.
+            </div>
+            
+            <!-- Right Column: Auto-sliding & Controlled Carousel -->
+            <div class="col-lg-6 col-md-6">
+            <div id="gameScreenshotCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                
+                <!-- Carousel Indicators (The little dots at the bottom, optional) -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <!-- Carousel Images -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000"> <!-- Changes slides every 4 seconds -->
+                        <img src="Images/School/GAM 415/image.png" class="d-block w-100" alt="Game Screenshot 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GAM 415/image2.png" class="d-block w-100" alt="Game Screenshot 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GAM 415/image3.png" class="d-block w-100" alt="Game Screenshot 3">
+                    </div>
+                </div>
+
+                <!-- Manual Controls (Previous / Next Buttons) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center justify-content-center">
+            
+            <!-- Left Column: Short Paragraph -->
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            <h3 class="fw-bold mb-3">GAM 312 - Gameplay System Development</h3>
+            <p class="text-muted">
+                Engine: Unreal Engine 5 Blueprints/C++
+            </p>
+            <p class="text-muted">
+                Course project focused on creating a short survival game. Requirements consisted of harvestable resources, roaming AI, custom and sculpted terrain, crafting and inventory menu, and a basic player controller.
+Project also required the use of UE5 C++ scripts. Most additions were created using C++ classes and enhanced with UE5 blueprints. Maintained using feature-branching workflow on Github.
+            </div>
+            
+            <!-- Right Column: Auto-sliding & Controlled Carousel -->
+            <div class="col-lg-6 col-md-6">
+            <div id="gameScreenshotCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                
+                <!-- Carousel Indicators (The little dots at the bottom, optional) -->
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <!-- Carousel Images -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000"> <!-- Changes slides every 4 seconds -->
+                        <img src="Images/School/GAM 312/058b87f5-a111-46b5-855a-8a00e2458ef4_rw_1200.png" class="d-block w-100" alt="Game Screenshot 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GAM 312/3969b6bf-93fe-4f46-824d-4c18eb90273c_rw_1920.png" class="d-block w-100" alt="Game Screenshot 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GAM 312/5cfc5e4d-af75-416c-919a-f3ea4ae6f85c_rw_1920.png" class="d-block w-100" alt="Game Screenshot 3">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GAM 312/747097f3-cf04-403a-a36b-1b344ef10930_rw_1920.png" class="d-block w-100" alt="Game Screenshot 4">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Images/School/GAM 312/fa0396a1-46ea-44de-b65d-b5d2962ee76f_rw_1920.png" class="d-block w-100" alt="Game Screenshot 5">
+                    </div>
+                </div>
+
+                <!-- Manual Controls (Previous / Next Buttons) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+    <div class="row align-items-center justify-content-center">
+        
+        <!-- Left Column: Short Paragraph -->
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+        <h3 class="fw-bold mb-3">GAM 305 - Digital Game Development</h3>
+        <p class="text-muted">
+            Engine: Unreal Engine 5 Blueprints
+        </p>
+        <p class="text-muted">
+            Course project focused on collaborating with three other students to make an objective-oriented game of their choosing. Our group settled on a short third-person horror explorer set inside a haunted toy store. The course required the use of feature-branching workflow on Github.
+    Specifically, I had the role of Systems Developer- I programmed the player controls, AI movement, weapons/tools, pickups, and menu systems. 
+        </div>
+        
+        <!-- Right Column: Auto-sliding & Controlled Carousel -->
+        <div class="col-lg-6 col-md-6">
+        <div id="gam305ScreenshotCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+            
+            <!-- Carousel Indicators (The little dots at the bottom, optional) -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <!-- Carousel Images -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000"> <!-- Changes slides every 4 seconds -->
+                    <img src="Images/School/GAM 305/15b964f1-84f8-433c-a7bb-bf9f56edc7c2_rw_1920.png" class="d-block w-100" alt="Game Screenshot 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 305/1957a24f-24dc-43e8-9f92-29d0be6a6143_rw_1920.png" class="d-block w-100" alt="Game Screenshot 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 305/8ebf683b-2b15-4789-af3a-4883597ff005_rw_1920.png" class="d-block w-100" alt="Game Screenshot 3">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 305/bee35288-d048-4d4c-addb-b4fa4d3248bf_rw_1920.png" class="d-block w-100" alt="Game Screenshot 4">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 305/d0162751-321c-4a59-a1ac-5c6aa69df560_rw_1920.png" class="d-block w-100" alt="Game Screenshot 5">
+                </div>
+            </div>
+
+            <!-- Manual Controls (Previous / Next Buttons) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#gam305ScreenshotCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gam305ScreenshotCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="container my-5">
+    <div class="row align-items-center justify-content-center">
+        
+        <!-- Left Column: Short Paragraph -->
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+        <h3 class="fw-bold mb-3">GAM 303 - Design of Virtual Game Environment</h3>
+        <p class="text-muted">
+            Engine: Unreal Engine 5 Blueprints
+        </p>
+        <p class="text-muted">
+            Course project focused on fundamental ideas of virtual environments. Students were given several game options to focus on. In my case, I opted for a 2.5D platformer with intractable enemies, doors, and pickups. 
+        </div>
+        
+        <!-- Right Column: Auto-sliding & Controlled Carousel -->
+        <div class="col-lg-6 col-md-6">
+        <div id="gam303ScreenshotCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+            
+            <!-- Carousel Indicators (The little dots at the bottom, optional) -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <!-- Carousel Images -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000"> <!-- Changes slides every 4 seconds -->
+                    <img src="Images/School/GAM 303/265cd940-8e19-4f2e-83e3-fc438b6030e0_rw_1920.png" class="d-block w-100" alt="Game Screenshot 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 303/60d3f5f0-e7e1-4bfe-90ee-2e259295575a_rw_1920.png" class="d-block w-100" alt="Game Screenshot 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 303/6c2b846d-5b43-4a05-923d-9da79cc310da_rw_1920.png" class="d-block w-100" alt="Game Screenshot 3">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 303/a146a9be-1ca8-4e88-9701-499356b44668_rw_1920.png" class="d-block w-100" alt="Game Screenshot 4">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 303/bee35288-d048-4d4c-addb-b4fa4d3248bf_rw_1920.png" class="d-block w-100" alt="Game Screenshot 5">
+                </div>
+            </div>
+
+            <!-- Manual Controls (Previous / Next Buttons) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#gam303ScreenshotCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gam303ScreenshotCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="container my-5">
+    <div class="row align-items-center justify-content-center">
+        
+        <!-- Left Column: Short Paragraph -->
+        <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+        <h3 class="fw-bold mb-3">GAM 207 - Info Tech and Digital Games</h3>
+        <p class="text-muted">
+            Engine: Unreal Engine 5 Blueprints
+        </p>
+        <p class="text-muted">
+            Course project focused on learning the basics of game implementations, such as obstacles, AI, and pickups. For my project, I created a first-person shooter within an enclosed arena. Enemy AI roam and shoot targets nearby. Health pickups are scattered around the map on timers. 
+        </div>
+        
+        <!-- Right Column: Auto-sliding & Controlled Carousel -->
+        <div class="col-lg-6 col-md-6">
+        <div id="gam207ScreenshotCarousel" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+            
+            <!-- Carousel Indicators (The little dots at the bottom, optional) -->
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#gameScreenshotCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <!-- Carousel Images -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000"> <!-- Changes slides every 4 seconds -->
+                    <img src="Images/School/GAM 207/58c453f3-9892-448d-858e-4a4dbbf4dc94_rw_1920-1.png" class="d-block w-100" alt="Game Screenshot 1">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 207/7f53b231-9f12-4531-b9ff-168b61430d35_rw_1920.png" class="d-block w-100" alt="Game Screenshot 2">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 207/81e2ac1d-87d6-45cd-9ffc-4cb53f2d736b_rw_1920.png" class="d-block w-100" alt="Game Screenshot 3">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 207/904a8005-b878-4715-95cf-e6b5b6d151c5_rw_1920.png" class="d-block w-100" alt="Game Screenshot 4">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="Images/School/GAM 207/dc2aeb97-1135-4851-bdae-38aa15125097_rw_1920.png" class="d-block w-100" alt="Game Screenshot 5">
+                </div>
+            </div>
+
+            <!-- Manual Controls (Previous / Next Buttons) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#gam207ScreenshotCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gam207ScreenshotCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

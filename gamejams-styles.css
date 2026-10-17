@@ -1,0 +1,253 @@
+:root {
+    --gj-navbar-color: #ffa7a5;
+    --gj-background-color: #ffe7d6;
+    --gj-text-color: #73464c;
+    --gj-link-color: #72dcbb;
+}
+
+@font-face {
+  font-family: "GrapeSoda";
+  src: url('Fonts/GrapeSoda.woff2') format('woff2');
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Helps text load faster */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  font-smooth: 16px;
+  text-rendering: crispEdges;
+  text-size-adjust: none;
+  filter: contrast(100.00001%);
+}
+
+
+
+/* Resets styling of every element */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Changing scroll in html */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Anchor Tags */
+a {
+    color: var(--gj-link-color);
+    text-decoration: none;
+}
+
+/* Setting up body text */
+.body-three {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--gj-background-color);
+    padding-bottom: 200px;
+
+}
+
+/* NAVBAR */
+.gj-nav {
+    font-family: 'GrapeSoda';
+    background-color: var(--gj-navbar-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+}
+
+.gj-nav .left i {
+    color: var(--gj-text-color);
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* NAVBAR LEFT */
+.gj-nav .left a{
+    color: var(--gj-text-color);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* NAVBAR RIGHT */
+.gj-nav .right a{
+    color: var(--gj-text-color);
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+/* NAVBAR RIGHT EMAIL (technically last one) */
+.gj-nav .right a:last-child {
+    color: var(--gj-background-color);
+    background-color: var(--gj-text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* NAVBAR RIGHT EMAIL SPAN (technically the span in general) */
+.gj-nav .right a span {
+    margin-left: 5px;
+}
+
+
+.gamejams-title {
+    text-align: center;
+    font-family: 'GrapeSoda';
+    color: var(--gj-text-color);
+}
+
+.gamejams-title h1 {
+    margin: 20px;
+    font-size: 120px;
+}
+
+.chuckchuck-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pangotango-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.finwalkers-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.chuckchuck-section img {
+    width: 600px;
+}
+
+.pangotango-section img {
+    width: 600px;
+}
+
+.finwalkers-section img {
+    width: 600px;
+}
+
+.chuckchuck-section .chuckchuck-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.finwalkers-section .finwalkers-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+.pangotango-section .pangotango-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+/* Tablet View (Max-width: 992px) */
+@media (max-width: 992px) {
+    .gj-nav {
+        padding: 0 20px;
+    }
+
+    .gamejams-title h1 {
+        font-size: 80px;
+    }
+
+    .chuckchuck-section img, 
+    .pangotango-section img, 
+    .finwalkers-section img {
+        max-width: 80%;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Mobile View (Max-width: 768px) */
+@media (max-width: 768px) {
+    .gj-nav {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    /* Hide text labels in navbar, leaving only icons visible */
+    .gj-nav .left a {
+        font-size: 0px; 
+    }
+    .gj-nav .left a i {
+        font-size: 20px; 
+        padding: 0;
+    }
+
+    .gj-nav .right a {
+        font-size: 0px; 
+        margin: 0 4px;
+    }
+    .gj-nav .right a i {
+        font-size: 18px; 
+    }
+
+    /* Fixed email button cropping: reset padding/dimensions 
+    so it shapes around the icon */
+    .gj-nav .right a:last-child {
+        padding: 8px 10px;
+        font-size: 0px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .gj-nav .right a:last-child i {
+        font-size: 16px;
+        margin: 0;
+    }
+    .gj-nav .right a:last-child span {
+        display: none;
+    }
+
+    .gamejams-title h1 {
+        font-size: 50px;
+        margin: 15px;
+    }
+
+    .chuckchuck-section img, 
+    .pangotango-section img, 
+    .finwalkers-section img {
+        max-width: 90%;
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Small Mobile View (Max-width: 480px) */
+@media (max-width: 480px) {
+    .gamejams-title h1 {
+        font-size: 38px;
+        margin: 10px;
+    }
+
+    .chuckchuck-section img, 
+    .pangotango-section img, 
+    .finwalkers-section img {
+        max-width: 95%;
+        width: auto;
+        height: auto;
+    }
+}

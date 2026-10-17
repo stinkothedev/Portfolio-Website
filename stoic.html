@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my web development and design portfolio. Check out my latest work and projects.">
+
+    <!-- Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- 1. The Local Bootstrap Style Link -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+    <!-- Your Custom Stylesheet -->
+    <link rel="stylesheet" href="stoic-styles.css">
+
+    <title>Stoic</title>
+</head>
+
+
+<body class="body-two">
+    <!--- NAVBAR 1 - TOP LINKS -->
+    <nav class="stoic-nav">
+        <div class="left">
+            <a href="/">
+                <i class="fa-solid fa-house"></i>
+                Jake Stanglewicz
+            </a>
+        </div>
+
+        <div class="right">
+
+            <a href="stoic.html" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Stoic</span>
+            </a>
+
+            <a href="gamejams.html" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-headset"></i>
+                <span>Game Jams</span>
+            </a>
+
+            <a href="projects.html" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-book"></i>
+                <span>Projects</span>
+            </a>
+
+            <!-- <a href="Experiences" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Experiences</span>
+            </a> -->
+
+            <a href="https://github.com/stinkothedev" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>stinkothedev</span>
+            </a>
+
+            <a href="https://github.com/JakeStangSNHU" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>JakeStangSNHU</span>
+            </a>
+
+
+            <a href="https://stinkothedev.itch.io/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-itch-io"></i>
+                <span>Itch.io</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jake-stanglewicz-2516b224b/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:jaketstang@outlook.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+
+        </div>
+    </nav>
+
+    <!-- Big Title -->
+     <div class="stoic-title-div">
+        <img src="Images/stoic-title.png" class="stoic-title-img" alt="stoic title">
+        <p> Debut Indie Game </p>
+    </div>
+
+    <div class="link-to-steam">
+        <a href="https://store.steampowered.com/app/4329640/Stoic/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-steam"></i>
+            <span>Visit on Steam!</span>
+        </a>
+    </div>
+
+    <!-- First Chunk -->
+    <div class="page-wrapper">
+
+        <!-- This is the container holding both boxes side-by-side -->
+        <div class="row-container">
+
+            <div class="box-column">
+                <p> Stoic is a physics-based platformer that I independently designed, developed, and published over the course of nearly three years. 
+                    Beginning in 2023 with little programming experience and no prior game development background, the project served as both a learning 
+                    opportunity and a practical application of the skills I was developing through my Game Programming and Development degree.</p>
+
+                <p></p>
+                <p> Inspired by titles such as Jump King and Getting Over It with Bennett Foddy, I built Stoic around a physics-driven launching mechanic 
+                    that emphasizes precision, momentum, and persistence. Throughout development, I iterated on gameplay systems, visual direction, and 
+                    level design before settling on a minimalist 2D art style and a narrative loosely inspired by the life of Zeno of Citium, founder of 
+                    Stoic philosophy.</p>
+
+                <p> The project provided hands-on experience across the full development pipeline, including gameplay programming, 
+                    physics systems, level design, playtesting, and publishing. Stoic was released on Steam for Windows on March 16, 2026, 
+                    marking my first commercial game release.</p>
+            </div>
+
+            <div class="stoic-video">
+                <video src="Videos/stoic-gameplay-trailer.mp4" controls width="640" height="360" autoplay loop muted playsinline>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Second Chunk -->
+    <div class="stoic-artwork-title">
+        <p> Screenshots</p>
+        <div id="stoicCarousel" class="carousel slide" data-bs-ride="carousel">
+  
+            <!-- Optional: Little Indicator bars at the bottom -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                <button type="button" data-bs-target="#stoicCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+            </div>
+
+            <!-- The Actual Slides Container -->
+            <div class="carousel-inner">
+                
+                <!-- Slide 1 (Must have the "active" class) -->
+                <div class="carousel-item active">
+                <img src="Images/Stoic/screenshot1-forest.png" class="d-block w-100 carousel-custom-img" alt="First Game Screenshot">
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot2-forest.png" class="d-block w-100 carousel-custom-img" alt="Second Game Screenshot">
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot3-sewer.png" class="d-block w-100 carousel-custom-img" alt="Third Game Screenshot">
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot4-jungle.png" class="d-block w-100 carousel-custom-img" alt="Fourth Game Screenshot">
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot5-jungle.png" class="d-block w-100 carousel-custom-img" alt="Fifth Game Screenshot">
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot6-jungle.png" class="d-block w-100 carousel-custom-img" alt="Sixth Game Screenshot">
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot7-books.png" class="d-block w-100 carousel-custom-img" alt="Seventh Game Screenshot">
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot8-col.png" class="d-block w-100 carousel-custom-img" alt="Eighth Game Screenshot">
+                </div>
+
+                <!-- Slide 9 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot9-sisyphus.png" class="d-block w-100 carousel-custom-img" alt="Ninth Game Screenshot">
+                </div>
+
+                <!-- Slide 10 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot10-snow.png" class="d-block w-100 carousel-custom-img" alt="Tenth Game Screenshot">
+                </div>
+
+                <!-- Slide 11 -->
+                <div class="carousel-item">
+                <img src="Images/Stoic/screenshot11-cave.png" class="d-block w-100 carousel-custom-img" alt="Eleventh Game Screenshot">
+                </div>
+
+            </div>
+
+            <!-- Left Navigation Arrow -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#stoicCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <!-- Right Navigation Arrow -->
+            <button class="carousel-control-next" type="button" data-bs-target="#stoicCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+
+    </div>
+
+    <!-- Third Chunk -->
+    <div class="stoic-artwork-title">
+        <p> A selection of Stoic's Artwork</p>
+        <img src="Images/Stoic/forest-cave-array.png" alt="Forest Cave Art">
+        <img src="Images/Stoic/junbgle-bookstore-array.png" alt="Jungle Bookstore Art">
+        <img src="Images/Stoic/sewer-array.png" alt="Sewer Art">
+        <img src="Images/Stoic/snow-array.png" alt="Snow Art">
+        <img src="Images/Stoic/stoa-array.png" alt="Stoa Art">
+        <img src="Images/Stoic/skins-array.png" alt="Skins Art">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

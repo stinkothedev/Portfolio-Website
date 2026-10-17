@@ -1,0 +1,472 @@
+/* Effects everything */
+:root {
+    --text-color: #291e16;
+    --link-color: #2D68C4;
+    --highlight-color: #702f3e;
+    --background-color: #f0e0d6;
+    --background-accent: #d9ac84;
+}
+
+@font-face {
+  font-family: "Tengoku";
+  src: url('Fonts/Tengoku.woff2') format('woff2');
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Helps text load faster */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  font-smooth: 16px;
+  text-rendering: crispEdges;
+  text-size-adjust: none;
+  filter: contrast(100.00001%);
+}
+
+/* Resets styling of every element */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Changing scroll in html */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Setting up body text */
+.body-one {
+    font-family: 'Tengoku', sans-serif;
+    background-color: var(--background-color);
+
+}
+
+/* Anchor Tags */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.index-nav {
+    background-color: var(--background-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+}
+.index-nav .left i {
+    margin-right: 3px;
+}
+
+/* NAVBAR LEFT */
+.index-nav .left a{
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* NAVBAR RIGHT */
+.index-nav .right a{
+    color: var(--text-color);
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+/* NAVBAR RIGHT EMAIL (technically last one) */
+.index-nav .right a:last-child {
+    color: var(--background-accent);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* NAVBAR RIGHT EMAIL SPAN (technically the span in general) */
+.index-nav .right a span {
+    margin-left: 5px;
+}
+
+/* Section 1: Hero*/
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+
+.hero-section .text {
+    text-align: center;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-section .text h2 {
+    font-size: 42px;
+    margin: 20px;
+}
+
+.hero-section .text p {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+    max-width: 65ch;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.headshot {
+    margin-top: 60px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.headshot img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* Section 2: Skills*/
+.skills-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.skills-section .text p {
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills-section .cells .cell {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid var(--background-accent);
+    border-radius: 5px;
+}
+
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.resume-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.resume-section h2 {
+    padding: 60px 20px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: #2563eb; /* Modern Blue */
+    color: #ffffff;
+    padding: 12px 24px;
+    font-family: 'Fira Sans';
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-download:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-download:active {
+    transform: scale(0.98);
+}
+
+
+
+/* Section 3: Stuff*/
+.pages-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.pages-section h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.pages-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.pages-section .cells .card {
+    margin: 20px;
+}
+
+.pages-section .cells .card p {
+    font-family: 'Fira Sans';
+}
+
+.pages-section .cells .card a {
+    font-family: 'Fira Sans';
+}
+
+.card-img-top {
+  border-top-left-radius: 0.375rem;  /* Adjust this value to match your card */
+  border-top-right-radius: 0.375rem;
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
+}
+
+
+/* Section 4: Contact*/
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 300px;
+
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.contact-section .group {
+    gap: 50px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.contact-section .group label {
+    font-family: 'Fira Sans';
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input, 
+.contact-section .group form textarea {
+    font-family: 'Fira Sans', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+
+
+.contact-section .group form button:hover {
+    filter: brightness(.8);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-family: 'Fira Sans';
+}
+
+/* Tablet View (Max-width: 992px) */
+@media (max-width: 992px) {
+    .index-nav {
+        padding: 0 20px;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        gap: 40px;
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+
+    .hero-section .text {
+        width: 100%;
+    }
+
+    .skills-section .cells {
+        width: 80%;
+    }
+
+    .contact-section .group {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Mobile View (Max-width: 768px) */
+@media (max-width: 768px) {
+    .index-nav {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    /* Hide text labels in navbar, leaving only icons visible */
+    .index-nav .left a {
+        font-size: 0px; 
+    }
+    .index-nav .left a i {
+        font-size: 20px; 
+    }
+
+    .index-nav .right a {
+        font-size: 0px; 
+        margin: 0 4px;
+    }
+    .index-nav .right a i {
+        font-size: 18px; 
+    }
+
+    /* Fixed email button cropping: reset padding/dimensions 
+    so it shapes around the icon */
+    .index-nav .right a:last-child {
+        padding: 8px 10px;
+        font-size: 0px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .index-nav .right a:last-child i {
+        font-size: 16px;
+        margin: 0;
+    }
+    .index-nav .right a:last-child span {
+        display: none; /* ensures inner text span doesn't take up layout space */
+    }
+
+    .hero-section .text h2 {
+        font-size: 32px;
+    }
+
+    .headshot img {
+        width: 260px;
+    }
+
+    .skills-section .cells {
+        width: 100%;
+    }
+
+    .skills-section .cells .cell {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .contact-section {
+        padding: 0 20px;
+        margin-bottom: 150px;
+    }
+}
+
+/* Small Mobile View (Max-width: 480px) */
+@media (max-width: 480px) {
+    .hero-section .text h2 {
+        font-size: 26px;
+    }
+
+    .hero-section .text p {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .headshot img {
+        width: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

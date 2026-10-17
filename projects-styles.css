@@ -1,0 +1,192 @@
+:root {
+    --proj-text-color: #2d2144;
+    --proj-link-color: #2D68C4;
+    --proj-highlight-color: #f5554a;
+    --proj-background-color: #f7f7ea;
+    --proj-navbar-color: #2d2144;
+    --proj-navbar-text-color: #f7f7ea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Pixelta";
+  src: url('Fonts/Pixelta.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Helps text load faster */
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: none;
+  text-rendering: crispEdges;
+}
+
+/* Changing scroll in html */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Setting up body text */
+.body-four {
+    font-family: 'Pixelta', sans-serif;
+    background-color: var(--proj-background-color);
+
+}
+
+/* Anchor Tags */
+a {
+    color: var(--proj-link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+.projects-nav {
+    background-color: var(--proj-navbar-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    height: 80px;
+}
+
+.projects-nav .left i {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* NAVBAR LEFT */
+.projects-nav .left a{
+    color: var(--proj-navbar-text-color);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* NAVBAR RIGHT */
+.projects-nav .right a{
+    color: var(--proj-navbar-text-color);
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+/* NAVBAR RIGHT EMAIL (technically last one) */
+.projects-nav .right a:last-child {
+    color: var(--proj-background-color);
+    background-color: var(--proj-highlight-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+/* NAVBAR RIGHT EMAIL SPAN (technically the span in general) */
+.projects-nav .right a span {
+    margin-left: 5px;
+}
+
+.projects-title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0px;
+    font-family: 'Pixelta';
+    color: var(--gj-text-color);
+}
+
+.projects-title h1 {
+    font-size: 50px;
+}
+
+/* Locks every carousel image to a uniform height and crops them cleanly */
+.carousel-item img {
+  height: 400px;         /* Change this value to make the frame taller or shorter */
+  object-fit: cover;     /* Automatically crops mismatched images to fill the space */
+  object-position: center; /* Centers the crop so it focuses on the middle of your screenshots */
+}
+
+.text-muted {
+    font-family: 'Fira Sans';
+}
+
+/* Tablet View (Max-width: 992px) */
+@media (max-width: 992px) {
+    .projects-nav {
+        padding: 0 20px;
+    }
+
+    .projects-title h1 {
+        font-size: 40px;
+    }
+
+    .carousel-item img {
+        height: 320px;
+    }
+}
+
+/* Mobile View (Max-width: 768px) */
+@media (max-width: 768px) {
+    .projects-nav {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    /* Hide text labels in navbar, leaving only icons visible */
+    .projects-nav .left a {
+        font-size: 0px; 
+    }
+    .projects-nav .left a i {
+        font-size: 20px; 
+        padding: 0;
+    }
+
+    .projects-nav .right a {
+        font-size: 0px; 
+        margin: 0 4px;
+    }
+    .projects-nav .right a i {
+        font-size: 18px; 
+    }
+
+    /* Fixed email button cropping: reset padding/dimensions 
+    so it shapes around the icon */
+    .projects-nav .right a:last-child {
+        padding: 8px 10px;
+        font-size: 0px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .projects-nav .right a:last-child i {
+        font-size: 16px;
+        margin: 0;
+    }
+    .projects-nav .right a:last-child span {
+        display: none;
+    }
+
+    .projects-title {
+        margin: 50px 0px;
+    }
+
+    .projects-title h1 {
+        font-size: 32px;
+    }
+
+    .carousel-item img {
+        height: 240px;
+    }
+}
+
+/* Small Mobile View (Max-width: 480px) */
+@media (max-width: 480px) {
+    .projects-title h1 {
+        font-size: 26px;
+    }
+
+    .carousel-item img {
+        height: 190px;
+    }
+}
